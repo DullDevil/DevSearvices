@@ -1,0 +1,161 @@
+var data = {};
+
+var descList = new Array();
+for (var i=0;i<4;i++) {
+	var item = new Object();
+  
+  if (0 == i) {
+    item.icon = "http://5idream.oss-cn-beijing.aliyuncs.com/dreamspace/homepage/homeIconActivity@3x.png";
+  	item.title = "参与范围：";
+  	item.value = "学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内学校内";
+  }else if (1 == i) {
+    item.icon = "http://5idream.oss-cn-beijing.aliyuncs.com/dreamspace/homepage/homeIconActivity@3x.png";
+  	item.title = "报名时间：";
+  	item.value = "06-24 22:26 至 06-24 22:28";
+  }else if (2 == i) {
+    item.icon = "http://5idream.oss-cn-beijing.aliyuncs.com/dreamspace/homepage/homeIconActivity@3x.png";
+  	item.title = "活动时间：";
+  	item.value = "06-24 22:26 至 06-24 22:28";
+  }else if (3 == i) {
+    item.icon = "http://5idream.oss-cn-beijing.aliyuncs.com/dreamspace/homepage/homeIconActivity@3x.png";
+  	item.title = "活动地点：";
+  	item.value = "活动地点打卡健康减肥活动地点打卡健康减肥活动地点打卡健康减肥活动地点打卡健康减肥活动地点打卡健康减肥活动地点打卡健康减肥活动地点打卡健康减肥活动地点打卡健康减肥活动地点打卡健康减肥活动地点打卡健康减肥活动地点打卡健康减肥活动地点打卡健康减肥";
+  }
+	descList.push(item);
+}
+data.descList = descList;
+
+
+
+
+
+var sponsor = {};
+sponsor.icon = "http://5idream.oss-cn-beijing.aliyuncs.com/dreamspace/homepage/homeIconActivity@3x.png";
+sponsor.name = "这是一个部落名字很长名字很长名字很长名字很长名字很长名字很长名字很长名字很长名字很长名字很长名字很长名字很长名字很长名字很长名字很长";
+data.sponsor = sponsor;
+
+
+
+
+
+var brief = {};
+brief.title = "活动摘要";
+brief.content = "活动摘要的一些说明活动摘要的一些说明活动摘要的一些说明活动摘要的一些说明活动摘要的一些说明活动摘要的一些说明活动摘要的一些说明活动摘要的一些说明活动摘要的一些说明活动摘要的一些说明活动摘要的一些说明活动摘要的一些说明活动摘要的一些说明活动摘要的一些说明";
+data.brief = brief;
+
+
+
+
+
+var explain = {};
+explain.title = "报名须知";
+explain.content = "报名须知的一些说明报名须知的一些说明报名须知的一些说明报名须知的一些说明报名须知的一些说明报名须知的一些说明报名须知的一些说明报名须知的一些说明报名须知的一些说明报名须知的一些说明报名须知的一些说明";
+data.explain = explain;
+
+
+
+
+
+
+var award = {};
+award.title = "活动奖项";
+award.emptyHintText = "未设置奖项";
+// var awardList = new Array();
+// for (var i=0;i<3;i++) {
+// 	var item = new Object();
+  
+//   item.icon = "http://5idream.oss-cn-beijing.aliyuncs.com/dreamspace/homepage/homeIconActivity@3x.png";
+//   item.name = "一等奖";
+//   item.number = "2人";
+//   item.awardName = "奖品名称";
+// 	awardList.push(item);
+// }
+// award.list = awardList;
+data.award = award;
+
+
+
+
+
+
+
+var credit = {};
+credit.title = "活动学分";
+credit.emptyHintText = "未设置学分";
+// var creditList = new Array();
+// for (var i=0;i<3;i++) {
+// 	var item = new Object();
+  
+//   item.desc = "2.00工时/人";
+// 	creditList.push(item);
+// }
+// credit.list = creditList;
+data.credit = credit;
+
+
+
+
+
+
+
+var attachment = {};
+attachment.title = "活动附件";
+attachment.desc = "全部附件";
+attachment.action = "dmkj://...";
+data.attachment = attachment;
+
+
+
+
+var members = {};
+members.title = "参与成员";
+members.actionTitle = "全部成员";
+members.action = "dmkj://...";
+members.emptyHintTitle = "暂无参与用户";
+var membersList = new Array();
+for (var i=0;i<3;i++) {
+	var item = new Object();
+  
+  item.avatar = "http://5idream.oss-cn-beijing.aliyuncs.com/dreamspace/homepage/homeIconActivity@3x.png";
+  item.action = "dmkj://...";
+	membersList.push(item);
+}
+members.list = membersList;
+data.members = members;
+
+
+
+
+
+
+var evaluation = {};
+evaluation.title = "综合评价";
+evaluation.score = "3.2";
+evaluation.star = "3";
+evaluation.desc = "共 20 人评论";
+evaluation.moreTitle = "更多评价（123）";
+evaluation.moreAction = "dmkj://activity/evaluationList?id=123";
+evaluation.emptyHintTitle = "暂无评价信息";
+var evaluationList = new Array();
+for (var i=0;i<2;i++) {
+	var item = new Object();
+  
+  item.avatar = "http://5idream.oss-cn-beijing.aliyuncs.com/dreamspace/homepage/homeIconActivity@3x.png";
+  item.title = "用户名字";
+  item.date = "2017-09-22";
+  item.score = i;
+  item.content = "活动相关评论内容，只显示一条活动相关评论内容，只显示一条活动相关评论内容，只显示一条活动相关评论内容，只显示一条活动相关评论内容，只显示一条活动相关评论内容，只显示一条活动相关评论内容，只显示一条活动相关评论内容，只显示一条活动相关评论内容，只显示一条活动相关评论内容，只显示一条";
+  item.action = "dmkj://...";
+  
+	evaluationList.push(item);
+}
+evaluation.list = evaluationList;
+data.evaluation = evaluation;
+
+
+
+
+
+resObj.data = data;
+
+

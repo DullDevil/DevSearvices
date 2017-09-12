@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CoderViewer</title>
+    <link rel="stylesheet" href="./view/codeViewer.css">
+    <script src="./view/codeViewer.js" charset="utf-8"></script>
+
+    <!-- 主题 -->
+    <link rel="stylesheet" href="./view/theme/eclipse.css">
+    <link rel="stylesheet" href="./view/theme/monokai.css">
+    <link rel="stylesheet" href="./view/theme/xq-dark.css">
+    <link rel="stylesheet" href="./view/theme/xq-light.css">
+
+    <!-- 代码编辑器 -->
+    <link rel="stylesheet" href="./view/lib/codemirror.css">
+    <link rel="stylesheet" href="./view/addon/hint/show-hint.css">
+
+    <script type="text/javascript" src="./view/lib/codemirror.js"></script>
+    <script type="text/javascript" src="./view/mode/javascript/javascript.js"></script>
+    <script type="text/javascript" src="./view/addon/hint/show-hint.js"></script>
+    <script type="text/javascript" src="./view/addon/hint/javascript-hint.js"></script>
+
+    <script type="text/javascript" src="./view/addon/selection/active-line.js"></script>
+    <script type="text/javascript" src="./view/addon/comment/comment.js"></script>
+
+
+  </head>
+  <body>
+      <div class="container-left">
+        <ol class="list" id="queryList">
+        </ol>
+      </div>
+      <div class="container-right">
+        <div class="right-top">
+          <input  class="urlInput itemView" id="urlInput" >
+          <button class= "actionBtn itemView" onclick="uploadCode()" >提交</button>
+          <button class="actionBtn itemView" onclick="deleteCode()">删除</button>
+        </div>
+        <div class="saveTip" id="saveTip" style="visibility:hidden">保存成功</div>
+        <div class="right-center">
+          <textarea  id="codeViewer"></textarea>
+        </div>
+
+        <div class="setting">
+          <p>选择主题
+          <select onchange="selectTheme(this)" id="theme">
+            <option selected="">default</option>
+            <option>eclipse</option>
+            <option>monokai</option>
+            <option>xq-dark</option>
+            <option>xq-light</option>
+          </select>
+          </p>
+          <div class="tip">
+            内置变量： <b>resObj</b> 接口返回的数据结构；<b>params</b> 接口参数; <b>timeout</b> 延迟响应时间（毫秒）</br>
+            快捷键： <b>Cmd+S</b> 保存文本； <b>Esc</b> 代码提示
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
