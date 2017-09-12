@@ -1,4 +1,4 @@
-# DevSearvices
+# DevService
 基于nodejs的简易服务器，便于模拟各种场景用来进行开发测试。
 ### 使用方法：
 
